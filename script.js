@@ -3,6 +3,36 @@ document.querySelector(".logo").addEventListener("click", () => {
     window.location.href = "index.html"; // reload home page
   });
   
+  // ===== SIDEBAR MENU =====
+  const menuBtn = document.getElementById("menuBtn");
+  const sidebar = document.getElementById("sidebar");
+  const closeBtn = document.getElementById("closeBtn");
+  const overlay = document.getElementById("overlay");
+  
+  // Open sidebar
+  menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("open");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden"; // Prevent scrolling when sidebar is open
+  });
+  
+  // Close sidebar
+  function closeSidebar() {
+    sidebar.classList.remove("open");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "auto"; // Restore scrolling
+  }
+  
+  closeBtn.addEventListener("click", closeSidebar);
+  overlay.addEventListener("click", closeSidebar);
+  
+  // Close sidebar on escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sidebar.classList.contains("open")) {
+      closeSidebar();
+    }
+  });
+  
   // ===== SLIDER SCRIPT =====
   let currentSlide = 0;
   const slides = document.querySelectorAll(".slide");
