@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartBuy Catalogue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="navbar">
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo-icon" />
+          Smart Buy
+        </a>
+      </div>
+
+    <div class="search-container">
+      <input id="search" type="text" placeholder="Search products..." />
+      <select id="category">
+        <option value="">All Categories</option>
+      </select>
+      <select id="sort">
+        <option value="relevance">Relevance</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A–Z</option>
+      </select>
+    </div>
+  </header>
+
+  <h2 class="section-heading">🔥 Trending Products for the Month 🔥 </h2>
+
+  <!-- Hero Slider -->
+<section class="hero-slider">
+    <div class="slides">
+        <div class="slide active">
+          <div class="slide-content">
+            <div class="slide-image">
+              <img src="images/fan.png" alt="fan">
+            </div>
+            <div class="slide-info">
+              <h2>High-Speed Ceiling Fan</h2>
+              <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
+              <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="slide-content">
+              <div class="slide-image">
+                <img src="images/bottle.png" alt="bottle">
+              </div>
+              <div class="slide-info">
+                <h2>Insulated Water Bottle</h2>
+                <p>Keeps drinks cold for 24h and hot for 12h. Stainless steel, eco-friendly.</p>
+                <a href="#" class="btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        <div class="slide">
+            <div class="slide-content">
+                 <div class="slide-image">
+                    <img src="images/mixer.png" alt="mixer">
+            </div>
+        
+                <div class="slide-info">
+            <h2>Best Mixer available in the marker</h2>
+            <p>low cost and more power less noise </p>
+            <a href="#" class="btn"> Shop Now </a>
+        </div>
+        </div>
+      </div>
+      <div class="slides">
+        <div class="slide active">
+          <div class="slide-content">
+            <div class="slide-image">
+              <img src="images/sofa.png" alt="sofa">
+            </div>
+            <div class="slide-info">
+              <h2>High-Speed Ceiling Fan</h2>
+              <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
+              <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+            <div class="slide active">
+              <div class="slide-content">
+                <div class="slide-image">
+                  <img src="images/flower.png" alt="flower">
+                </div>
+                <div class="slide-info">
+                  <h2>High-Speed Ceiling Fan</h2>
+                  <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
+                  <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
+                </div>
+              </div>
+            </div>
+    </div>
+  
+    <!-- Navigation arrows -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  
+    <!-- Dots for navigation -->
+    <div class="dots"></div>
+  </section>
+
+  <div class="divider">
+    <span>• • •</span>
+  </div>
+
+  <!-- Main catalogue -->
+  <main>
+    <div id="product-grid" class="grid"></div>
+    <p id="empty" class="empty hidden">No products found</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> SmartBuy — <span id="count"></span> products listed</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "price": "₹1,299",
+      "image": "images/headphones.png",
+      "link": "https://www.amazon.in/",
+      "category": "Electronics",
+      "tag": "Bluetooth 5.0"
+    },
+    {
+      "id": 2,
+      "name": "Smartwatch",
+      "price": "₹2,499",
+      "image": "images/smartwatch.png",
+      "link": "https://www.flipkart.com/",
+      "category": "Wearables",
+      "tag": "Heart rate"
+    },
+    {
+      "id": 3,
+      "name": "Mixer Grinder",
+      "price": "₹1,999",
+      "image": "images/mixer.png",
+      "link": "https://www.amazon.in/",
+      "category": "Home Appliances",
+      "tag": "500W"
+    }
+  ]
+  
