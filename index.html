@@ -7,16 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top navigation -->
+  <!-- Navigation -->
   <header class="navbar">
     <button id="menuBtn" class="menu-btn">☰</button>
     <div class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Logo" class="logo-icon" />
-          Smart Buy
-        </a>
-      </div>
-
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo-icon" />
+        Smart Buy
+      </a>
+    </div>
     <div class="search-container">
       <input id="search" type="text" placeholder="Search products..." />
       <select id="category">
@@ -75,89 +74,64 @@
   <!-- Overlay -->
   <div class="overlay" id="overlay"></div>
 
-  <h2 class="section-heading">🔥 Trending Products for the Month 🔥 </h2>
+  <!-- Hero Section -->
+  <h2 class="section-heading">🔥 Trending Products for the Month 🔥</h2>
 
   <!-- Hero Slider -->
-<section class="hero-slider">
+  <section class="hero-slider">
     <div class="slides">
-        <div class="slide active">
-          <div class="slide-content">
-            <div class="slide-image">
-              <img src="images/fan.png" alt="fan">
-            </div>
-            <div class="slide-info">
-              <h2>High-Speed Ceiling Fan</h2>
-              <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
-              <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
-            </div>
+      <div class="slide active">
+        <div class="slide-content">
+          <div class="slide-image">
+            <img src="images/fan.png" alt="High-Speed Ceiling Fan" data-link="https://amzn.in/d/ggbYUYX">
           </div>
-        </div>
-        <div class="slide">
-            <div class="slide-content">
-              <div class="slide-image">
-                <img src="images/bottle.png" alt="bottle">
-              </div>
-              <div class="slide-info">
-                <h2>Insulated Water Bottle</h2>
-                <p>Keeps drinks cold for 24h and hot for 12h. Stainless steel, eco-friendly.</p>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
+          <div class="slide-info">
+            <h2>High-Speed Ceiling Fan</h2>
+            <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
+            <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
           </div>
-        <div class="slide">
-            <div class="slide-content">
-                 <div class="slide-image">
-                    <img src="images/mixer.png" alt="mixer">
-            </div>
-        
-                <div class="slide-info">
-            <h2>Best Mixer available in the marker</h2>
-            <p>low cost and more power less noise </p>
-            <a href="#" class="btn"> Shop Now </a>
-        </div>
         </div>
       </div>
-      <div class="slides">
-        <div class="slide active">
-          <div class="slide-content">
-            <div class="slide-image">
-              <img src="images/sofa.png" alt="sofa">
-            </div>
-            <div class="slide-info">
-              <h2>High-Speed Ceiling Fan</h2>
-              <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
-              <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
-            </div>
+      
+      <div class="slide">
+        <div class="slide-content">
+          <div class="slide-image">
+            <img src="images/bottle.png" alt="Insulated Water Bottle">
+          </div>
+          <div class="slide-info">
+            <h2>Insulated Water Bottle</h2>
+            <p>Keeps drinks cold for 24h and hot for 12h. Stainless steel, eco-friendly.</p>
+            <a href="#" class="btn">Shop Now</a>
           </div>
         </div>
-        <div class="slides">
-            <div class="slide active">
-              <div class="slide-content">
-                <div class="slide-image">
-                  <img src="images/flower.png" alt="flower">
-                </div>
-                <div class="slide-info">
-                  <h2>High-Speed Ceiling Fan</h2>
-                  <p>Energy efficient, 3-speed settings, stylish design perfect for modern homes.</p>
-                  <a href="https://amzn.in/d/ggbYUYX" target="_blank" class="btn">Shop Now</a>
-                </div>
-              </div>
-            </div>
+      </div>
+      
+      <div class="slide">
+        <div class="slide-content">
+          <div class="slide-image">
+            <img src="images/mixer.png" alt="Premium Mixer Grinder">
+          </div>
+          <div class="slide-info">
+            <h2>Premium Mixer Grinder</h2>
+            <p>Low cost and more power, less noise. Perfect for daily kitchen needs.</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
     </div>
-  
-    <!-- Navigation arrows -->
+    
+    <!-- Navigation -->
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
-  
-    <!-- Dots for navigation -->
     <div class="dots"></div>
   </section>
 
+  <!-- Divider -->
   <div class="divider">
     <span>• • •</span>
   </div>
 
-  <!-- Main catalogue -->
+  <!-- Product Grid -->
   <main>
     <div id="product-grid" class="grid"></div>
     <p id="empty" class="empty hidden">No products found</p>
