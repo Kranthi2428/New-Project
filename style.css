@@ -30,6 +30,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo a {
@@ -53,8 +55,9 @@ body {
   display: flex;
   gap: 8px;
   flex: 1;
-  max-width: 800px;
-  margin-left: 20px;
+  max-width: 600px;
+  margin: 0 10px;
+  min-width: 0;
 }
 
 .search-container input,
@@ -68,6 +71,7 @@ body {
 
 .search-container input {
   flex: 1;
+  min-width: 0;
 }
 
 .menu-btn {
@@ -196,6 +200,8 @@ body {
   background-color: #ae8888;
   text-align: center;
   color: #111;
+  padding: 15px 10px;
+  margin: 0;
 }
 
 .hero-slider {
@@ -228,6 +234,7 @@ body {
   justify-content: space-between;
   gap: 30px;
   padding: 20px;
+  flex-direction: row;
 }
 
 .slide-image img {
@@ -236,6 +243,7 @@ body {
   border-radius: 12px;
   object-fit: cover;
   cursor: pointer;
+  max-width: 100%;
 }
 
 .slide-info {
@@ -423,4 +431,142 @@ footer {
   color: white;
   padding: 15px;
   margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar .logo {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-btn {
+    order: 0;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .search-container {
+    order: 2;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-container select {
+    width: 100%;
+  }
+  
+  .section-heading {
+    font-size: 1.4rem;
+    padding: 12px 10px;
+  }
+  
+  .slide-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .slide-image img {
+    width: 250px;
+    max-width: 90%;
+  }
+  
+  .slide-info h2 {
+    font-size: 20px;
+  }
+  
+  .slide-info p {
+    font-size: 14px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    padding: 15px;
+  }
+  
+  .card img {
+    height: 140px;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card h3 {
+    font-size: 14px;
+  }
+  
+  .price {
+    font-size: 16px;
+  }
+  
+  .sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+  
+  .logo a {
+    font-size: 1.2rem;
+  }
+  
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .section-heading {
+    font-size: 1.2rem;
+    padding: 10px 8px;
+  }
+  
+  .slide-content {
+    padding: 12px;
+  }
+  
+  .slide-image img {
+    width: 200px;
+  }
+  
+  .slide-info h2 {
+    font-size: 18px;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    padding: 12px;
+  }
+  
+  .card img {
+    height: 120px;
+  }
+  
+  .sidebar {
+    width: 260px;
+  }
+  
+  .sidebar-content {
+    padding: 15px;
+  }
 }
